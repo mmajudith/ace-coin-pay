@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import Payment from './pages/Payment';
+import BgImage from './assets/bg.jpg';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+	return (
+		<div
+			className="w-full h-full m-auto py-14 lg:py-[85px] bg-no-repeat bg-[center_left] text-base font-normal lg:border-l-[25px] lg:border-r-[25px] lg:border-l-white lg:border-r-white lg:border-solid"
+			style={{ backgroundImage: `url(${BgImage})` }}
+		>
+			{' '}
+			<Payment />
+		</div>
+	);
+};
 
 export default App;
